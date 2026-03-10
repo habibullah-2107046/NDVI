@@ -1,14 +1,14 @@
-# NDVI-Based Drought Assessment of Kasba Union, Nachole (2017–2025)
+# NDVI Changes of Kasba Union, Nachole (2017–2025)
 
 ![NDVI Changes](NDVI.jpeg)
 
 ## Overview
 
-This repository presents a **multi-temporal vegetation and drought analysis** of **Kasba Union, Nachole Upazila, Chapainawabganj District, Bangladesh** using **remote sensing and GIS techniques**.
+This repository presents a **multi-temporal vegetation analysis** of **Kasba Union, Nachole Upazila, Chapainawabganj District, Bangladesh** using **remote sensing and GIS techniques**.
 
-The analysis uses **Landsat 8 satellite imagery** to calculate the **Normalized Difference Vegetation Index (NDVI)** for multiple years (2017, 2019, 2021, 2023, and 2025). These NDVI values were further used to derive the **Vegetation Condition Index (VCI)** to assess **vegetation health and drought conditions** over time.
+The analysis uses **Landsat 8 satellite imagery** to calculate the **Normalized Difference Vegetation Index (NDVI)** for multiple years: **2017, 2019, 2021, 2023, and 2025**.
 
-This study demonstrates how **satellite data and geospatial analysis** can be used to monitor environmental changes and support **drought assessment and climate resilience planning**.
+The generated NDVI maps illustrate the **spatial distribution and temporal variation of vegetation conditions** in the study area. The analysis helps identify vegetation health patterns and changes over time using satellite-based observations.
 
 ---
 
@@ -16,15 +16,15 @@ This study demonstrates how **satellite data and geospatial analysis** can be us
 
 The study focuses on **Kasba Union**, located in **Nachole Upazila, Chapainawabganj District, Bangladesh**.
 
-The region is known for its **agricultural dependency and susceptibility to drought**, making vegetation monitoring important for understanding environmental stress and agricultural sustainability.
+This region is largely dependent on **agriculture and vegetation resources**, making vegetation monitoring important for understanding environmental changes and land condition dynamics.
 
 ---
 
-## NDVI (Normalized Difference Vegetation Index)
+## Normalized Difference Vegetation Index (NDVI)
 
-NDVI is a widely used vegetation index that measures **vegetation greenness and health** using satellite imagery.
+NDVI is one of the most widely used **vegetation indices** derived from satellite imagery. It measures vegetation health and density by comparing the reflectance values of the **Near Infrared (NIR)** and **Red** spectral bands.
 
-It is calculated using the formula:
+The NDVI formula is:
 
 ```
 NDVI = (NIR - Red) / (NIR + Red)
@@ -33,38 +33,28 @@ NDVI = (NIR - Red) / (NIR + Red)
 Where:
 
 - **NIR** = Near Infrared Band  
-- **Red** = Red Band
+- **Red** = Red Band  
 
-NDVI values range from **-1 to +1**:
+NDVI values range between **-1 and +1**.
 
 | NDVI Value | Interpretation |
 |-------------|---------------|
 | < 0 | Water bodies |
 | 0 – 0.2 | Bare soil / sparse vegetation |
 | 0.2 – 0.5 | Moderate vegetation |
-| > 0.5 | Dense vegetation |
+| > 0.5 | Dense and healthy vegetation |
 
-Higher NDVI values indicate **healthier and denser vegetation**.
-
----
-
-## Vegetation Condition Index (VCI)
-
-To evaluate drought conditions, **Vegetation Condition Index (VCI)** was derived from NDVI values.
-
-VCI measures **vegetation stress relative to historical NDVI conditions**, helping identify areas experiencing drought.
-
-Lower VCI values indicate **vegetation stress or drought conditions**, while higher values represent **healthy vegetation conditions**.
+Higher NDVI values represent **healthier and denser vegetation**, while lower values indicate **poor vegetation or non-vegetated surfaces**.
 
 ---
 
 ## Data Source
 
-Satellite data used in this analysis:
+Satellite imagery used in this analysis:
 
 - **Satellite:** Landsat 8
 - **Sensor:** OLI/TIRS
-- **Years Analyzed:**
+- **Years analyzed:**
   - 2017
   - 2019
   - 2021
@@ -77,17 +67,16 @@ The data were obtained from **USGS EarthExplorer**.
 
 ## Methodology
 
-The drought assessment followed these major steps:
+The NDVI maps were generated using the following steps:
 
 1. Acquisition of Landsat 8 satellite imagery
 2. Preprocessing and preparation of raster datasets
 3. Extraction of spectral bands (Red and NIR)
 4. Calculation of **NDVI**
-5. Derivation of **Vegetation Condition Index (VCI)**
-6. Spatial analysis and visualization of vegetation patterns
-7. Comparison of NDVI values across multiple years
+5. Spatial visualization of vegetation distribution
+6. Comparison of NDVI values across multiple years
 
-The analysis allowed identification of **temporal vegetation changes and drought conditions** within the study area.
+The analysis allows observation of **temporal changes in vegetation conditions** within the study area.
 
 ---
 
@@ -99,17 +88,6 @@ The analysis and map preparation were conducted using:
 - Remote sensing raster processing tools
 - GIS spatial analysis tools
 - Cartographic visualization techniques
-
----
-
-## Key Insights
-
-The multi-temporal NDVI analysis reveals:
-
-- Spatial variations in vegetation health across the study area
-- Temporal fluctuations in vegetation conditions between 2017–2025
-- Periods of **reduced vegetation health indicating potential drought stress**
-- The usefulness of remote sensing for **environmental monitoring and drought assessment**
 
 ---
 
@@ -139,4 +117,4 @@ Rajshahi University of Engineering & Technology (RUET), Bangladesh
 
 This project is licensed under the **MIT License**.
 
-See the **LICENSE** file for more details.
+See the **LICENSE** file for details.
